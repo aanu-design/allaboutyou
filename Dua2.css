@@ -1,6 +1,6 @@
 .background-text {
   position: absolute;
-  top: 50%;         /* Center vertically */
+  top: 15%;         /* Center vertically */
   left: 50%;        /* Center horizontally */
   transform: translate(-50%, -50%);
   font-size: 40px;             /* Adjust size as needed */
