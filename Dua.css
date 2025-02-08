@@ -44,6 +44,7 @@ body {
   .firework::before,
   .firework::after
   {
+      z:-1
     --initialSize: 0.5vmin;
     --finalSize: 45vmin;
     --particleSize: 0.2vmin;
