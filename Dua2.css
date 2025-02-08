@@ -1,6 +1,6 @@
 .background-text {
   position: absolute;
-  top: 20%;
+  padding-top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;             /* Adjust size as needed */
