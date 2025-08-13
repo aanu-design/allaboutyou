@@ -27,7 +27,7 @@
   </style>
 </head>
 <body>
-  <audio id="bg-music" src="audio1.mp3" autoplay loop></audio>
+  <audio id="bg-music" src="audio1.mp3"></audio>
 
   <div id="fullPage" onclick="handleClick()">
     <div id="header">
@@ -53,8 +53,18 @@
   <script>
     document.getElementById("bg-music").volume = 1.0;
 
-    function handleClick() {
-      window.location.href = "Dua2.html";
+   function handleClick() {
+    const audio = document.getElementById("bg-music");
+
+    // Start audio only on first click (user interaction triggers playback)
+    if (audio.paused) {
+        audio.play();
+        
+        // Redirect to Dua2.html when audio finishes
+        audio.onended = function() {
+            window.location.href = "Dua2.html";
+        };
+      }
     }
   
     setTimeout(() => {
@@ -64,4 +74,5 @@
   </script>
 </body>
 </html>
+
 
